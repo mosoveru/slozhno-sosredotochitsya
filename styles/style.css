@@ -1,7 +1,9 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  background-position: center;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-attachment: fixed;
 }
 
 .header {
@@ -96,13 +98,16 @@
   font-weight: 700;
 }
 
+.main {
+  padding: 0 20px;
+}
+
 .main__hard-to-focus {
   display: grid;
   grid-template-columns: minmax(236px, 315px) minmax(472px, 649px);
   justify-content: center;
   gap: 20px;
   margin-block-end: 80px;
-  padding: 0 20px;
 }
 
 .main__hard-to-focus_list-item {
@@ -149,7 +154,6 @@
   justify-content: center;
   gap: 20px;
   margin-block-end: 80px;
-  padding: 0 20px;
 }
 
 .main__reduced-concentration_title {
@@ -175,7 +179,6 @@
   justify-content: center;
   gap: 20px;
   margin-block-end: 80px;
-  padding: 0 20px;
 }
 
 .main__concentrate-better_list {
@@ -203,8 +206,7 @@
 }
 
 .main__gallery {
-  margin-block-end: 80px;
-  padding: 0 20px;
+  margin-block-end: 60px;
 }
 
 .main__gallery .title-text {
@@ -257,6 +259,7 @@
   justify-content: center;
   align-items: center;
   min-block-size: 100vb;
+  padding: 20px;
 }
 
 .footer__title {
@@ -342,12 +345,15 @@
     max-inline-size: 355px;
   }
 
+  .main {
+    padding: 0 10px;
+  }
+
   .main__hard-to-focus {
     display: flex;
     flex-direction: column;
     gap: 20px;
     margin-block-end: 50px;
-    padding: 0 10px;
   }
 
   .main__hard-to-focus_title {
@@ -355,13 +361,10 @@
   }
 
   .main__reduced-concentration {
-    padding: 0 10px;
-  }
-
-  .main__reduced-concentration {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-block-end: 50px;
   }
 
   .main__reduced-concentration_list {
@@ -378,12 +381,11 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 0 10px;
-  }
+    margin-block-end: 50px;
+  } 
 
   .main__gallery {
     margin-block-end: 40px;
-    padding: 0 10px;
   }
 
   .main__gallery .title-text {
@@ -394,6 +396,10 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+  }
+
+  .footer {
+    padding: 10px;
   }
 
   .footer__title {
