@@ -239,13 +239,13 @@
   margin-block-end: 80px;
 }
 
-.simple-tips {
+.simple-tips,
+.concentrate-better_list {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.concentrate-better_list,
 .concentrate-better_list-item {
   display: flex;
   flex-direction: column;
