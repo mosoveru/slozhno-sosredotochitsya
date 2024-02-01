@@ -37,7 +37,7 @@
   line-height: 100%;
   text-transform: lowercase;
   background-color: transparent;
-  transition: 1s ease-out;
+  transition: ease-out 0.5s;
   cursor: pointer;
 }
 
@@ -55,7 +55,7 @@
 
 .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--accent-color);
-  outline: none;
+  outline: 1px solid transparent;
 }
 
 .header__theme-menu-button_active {
@@ -180,6 +180,7 @@
 .link {
   position: relative;
   display: inline-block;
+  line-height: 90%;
   text-decoration-color: transparent;
   transition: 1s ease-out;
 }
@@ -196,7 +197,6 @@
 
 .link:focus-visible {
   outline: 1px solid var(--text-color);
-  line-height: 90%;
 }
 
 .main__hard-to-focus_link::before {
