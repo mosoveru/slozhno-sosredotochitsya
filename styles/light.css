@@ -53,6 +53,7 @@
     --subtitle-color: #ff8dcb;
     --bg-color: #fff1f7;
     --bg-image: url(../images/cover-image-light.png);
+    --font: "IBM Plex mono";
   }
 
   .page {

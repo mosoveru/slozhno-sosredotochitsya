@@ -2,7 +2,10 @@
 
 .page {
   background-color: var(--subtitle-color);
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-attachment: fixed;
 }
@@ -13,16 +16,21 @@
   grid-template-rows: 1fr min-content 1fr;
   margin-block-end: 60px;
   padding: 20px;
-  background-image: var(--bg-image);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   min-block-size: 100vb;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  gap: 10px;
+}
+
+.header__theme-menu {
+  justify-self: center;
 }
 
 .header__theme-menu-button {
   border: none;
-  padding: 1px 13px;
+  padding: 1px 13px 6px;
   color: var(--accent-color);
   font-size: 18px;
   line-height: 100%;
@@ -81,18 +89,18 @@
   inset-block-start: 20px;
 }
 
-.page.theme_dark .header__decorated-element::before {
+.header__decorated-element::before {
   content: "REC";
   position: absolute;
   color: var(--accent-color);
-  font-family: "IBM Plex mono", sans-serif;
+  font-family: var(--font, monospace);
   font-size: 18px;
   line-height: 25px;
   inset-inline-end: 0;
   inset-block-start: 0;
 }
 
-.page.theme_dark .header__decorated-element::after {
+.header__decorated-element::after {
   content: "";
   position: absolute;
   border-radius: 50%;
@@ -104,20 +112,11 @@
   inset-block-start: 8px;
 }
 
-.header__theme-menu-list {
-  display: flex;
-  gap: 10px;
-}
-
-.header__theme-menu {
-  justify-self: center;
-}
-
 .header__title {
   position: relative;
   align-self: center;
   color: var(--title-color);
-  font-family: "IBM Plex mono", sans-serif;
+  font-family: var(--font, monospace);
   font-weight: 700;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   line-height: 82.5%;
@@ -138,7 +137,7 @@
 
 .title-text {
   color: var(--subtitle-color);
-  font-family: "IBM Plex mono", sans-serif;
+  font-family: var(--font, monospace);
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
@@ -324,7 +323,7 @@
 
 .footer__title {
   color: var(--title-color);
-  font-family: "IBM Plex mono", sans-serif;
+  font-family: var(--font, monospace);
   font-weight: 700;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   line-height: 82.5%;
@@ -339,7 +338,6 @@
 
   .header__theme-menu-list {
     flex-direction: column;
-    gap: 13px;
   }
 
   .header__paragraph {

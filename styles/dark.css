@@ -10,6 +10,7 @@
   --title-color: #db00ff;
   --subtitle-color: #000028;
   --bg-image: url(../images/cover-image-dark.png);
+  --font: "IBM Plex mono";
 }
 
 .page.theme_dark {
@@ -24,7 +25,7 @@
   content: "REC";
   position: absolute;
   color: var(--accent-color);
-  font-family: "IBM Plex mono", sans-serif;
+  font-family: var(--font, monospace);
   font-size: 18px;
   line-height: 25px;
   inset-inline-end: 0;
