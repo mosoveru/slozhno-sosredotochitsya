@@ -20,37 +20,6 @@
   background-color: var(--subtitle-color);
 }
 
-.page.theme_dark .header {
-  background-image: var(--bg-image);
-}
-
-.page.theme_dark .header__theme-menu-button {
-  color: var(--accent-color);
-}
-
-.page.theme_dark .header__theme-menu-button:disabled {
-  outline: 1px solid var(--accent-color);
-}
-
-.page.theme_dark .header__theme-menu-button:hover {
-  outline: 1px solid var(--accent-color);
-}
-
-.page.theme_dark .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--accent-color);
-  outline: none;
-}
-
-.page.theme_dark .decorated-zone::before {
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
-}
-
-.page.theme_dark .decorated-zone::after {
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
-}
-
 .page.theme_dark .header__decorated-element::before {
   content: "REC";
   position: absolute;
@@ -74,11 +43,6 @@
   inset-block-start: 8px;
 }
 
-.page.theme_dark .header__title {
-  color: var(--title-color);
-  text-shadow: 4px 4px 0px var(--accent-color);
-}
-
 .page.theme_dark .title-decor {
   background-color: var(--accent-color);
 }
@@ -93,139 +57,4 @@
 
 .page.theme_dark .paragraph-text {
   color: var(--text-color);
-}
-
-.page.theme_dark .main__hard-to-focus_link::before {
-  color: var(--accent-color);
-}
-
-.page.theme_dark .main__link:hover {
-  text-decoration-color: var(--text-color);
-}
-
-.page.theme_dark .main__link:focus-visible {
-  outline: 1px solid var(--text-color);
-}
-
-.page.theme_dark .main__concentrate-better_link::before {
-  color: var(--accent-color);
-}
-
-.page.theme_dark .footer__title {
-  color: var(--title-color);
-  text-shadow: 2px 2px 0px var(--accent-color);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --accent-color: #ff0070;
-    --text-color: #f1b2ce;
-    --title-color: #db00ff;
-    --subtitle-color: #000028;
-    --bg-image: url(../images/cover-image-dark.png);
-  }
-
-  .page {
-    background-color: var(--subtitle-color);
-  }
-
-  .header {
-    background-image: var(--bg-image);
-  }
-
-  .header__theme-menu-button {
-    color: var(--accent-color);
-  }
-
-  .header__theme-menu-button:disabled {
-    outline: 1px solid var(--accent-color);
-  }
-
-  .header__theme-menu-button:hover {
-    outline: 1px solid var(--accent-color);
-  }
-
-  .header__theme-menu-button:focus-visible {
-    border-bottom: 1px solid var(--accent-color);
-    outline: none;
-  }
-
-  .decorated-zone::before {
-    border-inline-start: 1px solid var(--accent-color);
-    border-block-end: 1px solid var(--accent-color);
-  }
-
-  .decorated-zone::after {
-    border-inline-end: 1px solid var(--accent-color);
-    border-block-start: 1px solid var(--accent-color);
-  }
-
-  .header__decorated-element::before {
-    content: "REC";
-    position: absolute;
-    color: var(--accent-color);
-    font-family: "IBM Plex mono", sans-serif;
-    font-size: 18px;
-    line-height: 25px;
-    inset-inline-end: 0;
-    inset-block-start: 0;
-  }
-
-  .header__decorated-element::after {
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-    background-color: var(--accent-color);
-    filter: drop-shadow(0px 0px 4px var(--accent-color));
-    block-size: 9px;
-    inline-size: 9px;
-    inset-inline-start: 10px;
-    inset-block-start: 8px;
-  }
-
-  .header__title {
-    color: var(--title-color);
-    text-shadow: 4px 4px 0px var(--accent-color);
-  }
-
-  .title-decor {
-    background-color: var(--accent-color);
-  }
-
-  .title-text {
-    color: var(--subtitle-color);
-  }
-
-  .section__title {
-    color: var(--accent-color);
-  }
-
-  .paragraph-text {
-    color: var(--text-color);
-  }
-
-  .header__paragraph {
-    color: var(--subtitle-color);
-  }
-
-  .main__link:hover {
-    text-decoration-color: var(--text-color);
-  }
-
-  .main__link:focus-visible {
-    outline: 1px solid var(--text-color);
-  }
-
-  .main__hard-to-focus_link::before {
-    color: var(--accent-color);
-  }
-
-  .main__concentrate-better_link::before {
-    color: var(--accent-color);
-  }
-
-  .footer__title {
-    color: var(--title-color);
-    text-shadow: 2px 2px 0px var(--accent-color);
-  }
 }
