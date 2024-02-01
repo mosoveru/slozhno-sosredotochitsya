@@ -45,6 +45,14 @@
   background-color: transparent;
 }
 
+.page.theme_light .main__hard-to-focus_link::before {
+  color: var(--subtitle-color);
+}
+
+.page.theme_light .concentrate-better_link::before {
+  color: var(--subtitle-color);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --accent-color: #ff0070;
@@ -78,5 +86,13 @@
 
   .header__decorated-element::after {
     background-color: transparent;
+  }
+
+  .main__hard-to-focus_link::before {
+    color: var(--subtitle-color);
+  }
+
+  .concentrate-better_link::before {
+    color: var(--subtitle-color);
   }
 }
